@@ -74,7 +74,7 @@
           <p class="eyebrow dark">Selected work</p>
           <h2>Systems with a reason to exist.</h2>
         </div>
-        <p class="section-intro">Three projects show the range of the work: an operational agent with guarded actions, a geospatial decision-support product, and a published forecasting model with reproducible code.</p>
+        <p class="section-intro">Four projects show the range of the work: guarded AI operations, geospatial decision support, task-aware biomedical signal modelling, and published forecasting research with reproducible code.</p>
       </div>
 
       <article class="feature-project feature-agent">
@@ -119,6 +119,27 @@
         </div>
       </article>
 
+      <article class="feature-project feature-ecg">
+        <div class="feature-media ecg-media">
+          <img src="assets/ecg-task-aware-pipeline.svg" alt="Conceptual diagram of a classifier-first ECG denoising pipeline">
+          <span class="media-note">Conceptual pipeline visual · no patient data</span>
+        </div>
+        <div class="feature-content">
+          <div class="project-number">03</div>
+          <div class="project-meta"><span>Healthcare AI</span><span>Public repository</span></div>
+          <h3>Task-Aware ECG Classification & Denoising</h3>
+          <p class="project-lead">A PyTorch research pipeline that uses downstream rhythm classification feedback to improve ECG denoising while protecting waveform morphology.</p>
+          <p>Built a classifier-first workflow that trains or adapts an ECG classifier, freezes it, then fine-tunes a denoiser through downstream task loss. Anchor and slope-consistency constraints discourage the denoiser from becoming a class-hacking front end.</p>
+          <ul class="outcome-list">
+            <li>Structured manifests, data splits, checkpoints and reports</li>
+            <li>Flexible class mappings and pretrained CNN-BiLSTM adaptation</li>
+            <li>MIL experiments, detailed validation and threshold calibration</li>
+          </ul>
+          <div class="tech-row" aria-label="Technologies"><span>PyTorch</span><span>ECG signals</span><span>CNN-BiLSTM</span><span>MIL</span><span>Denoising</span><span>Experiment tracking</span></div>
+          <a class="project-link" href="https://github.com/sonnybjs/ecg" target="_blank" rel="noreferrer">Repository <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
       <article class="feature-project feature-paper">
         <div class="paper-visual" aria-hidden="true">
           <div class="paper-grid"></div>
@@ -128,7 +149,7 @@
           <div class="paper-label">Neurocomputing · 2026</div>
         </div>
         <div class="feature-content">
-          <div class="project-number">03</div>
+          <div class="project-number">04</div>
           <div class="project-meta"><span>Forecasting research</span><span>Published</span></div>
           <h3>Wrinkles in Time</h3>
           <p class="project-lead">Multi-scale patching and super-resolution for efficient long-horizon time-series forecasting.</p>

@@ -22,6 +22,16 @@ This catalogue separates public repositories, published research, collaborative 
 - **Summary:** Combines environmental features, bathymetry, presence-background sampling, model artefacts and interactive maps to explore relative pelagic habitat suitability around Sydney and nearby NSW waters.
 - **Boundary:** Provides model exploration rather than exact fish locations, guaranteed catches, navigation advice or verified operational fishing marks.
 
+### Task-Aware ECG Classification & Denoising
+
+- **Type:** Healthcare AI and biomedical signal research engineering
+- **Status:** Active research prototype; public code
+- **Repository:** <https://github.com/sonnybjs/ecg>
+- **Stack:** Python, PyTorch, CNN-BiLSTM, multiple-instance learning, ECG denoising, experiment tracking
+- **Summary:** Implements a classifier-first workflow: train or adapt a downstream ECG classifier, freeze it, then fine-tune a denoiser through classification loss while using anchor and slope-consistency constraints to preserve waveform morphology.
+- **Research scope:** Supports configurable class-taxonomy mappings, pretrained-backbone adaptation, detection-oriented MIL, detailed validation, threshold calibration, checkpoints and structured reports.
+- **Boundary:** Presented as an experimental research pipeline, not a clinically validated diagnostic system. No patient data or clinical performance claim is published in this portfolio.
+
 ### Wrinkles in Time
 
 - **Type:** Deep-learning research and reproducible implementation

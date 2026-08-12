@@ -414,6 +414,15 @@ img {
   background: #062b36;
 }
 
+.ecg-media {
+  background: var(--ink);
+}
+
+.feature-ecg .feature-media > img:first-child {
+  object-fit: contain;
+  object-position: center;
+}
+
 .map-inset {
   position: absolute;
   width: 40%;

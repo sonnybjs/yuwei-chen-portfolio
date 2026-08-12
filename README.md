@@ -10,6 +10,7 @@ A static, GitHub Pages-ready portfolio for selected research, applied AI and dat
 
 - [SydHah Comedy Eventbrite Operations Agent](https://github.com/sonnybjs/xixiao-eventbrite-admin-agent) - a local-first Python/FastAPI and Discord agent with structured Codex planning, explicit confirmation before writes, Eventbrite integration and SQLite audit logging.
 - [Sydney Offshore Pelagic AI Map](https://github.com/sonnybjs/sydney-offshore-pelagic-ai) - a full-stack geospatial decision-support prototype using Python, FastAPI, Next.js, environmental features and bathymetry.
+- [Task-Aware ECG Classification & Denoising](https://github.com/sonnybjs/ecg) - a PyTorch research pipeline combining rhythm classification, task-aware denoiser fine-tuning, morphology-preservation constraints, MIL and structured experiment tracking.
 - [Wrinkles in Time](https://github.com/sonnybjs/Wrinkles-in-time) - the reproducible implementation for a hybrid CNN-MLP time-series forecasting model published in *Neurocomputing*.
 
 ### Research
