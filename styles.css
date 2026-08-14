@@ -327,15 +327,15 @@ img {
 }
 
 .section {
-  padding: 108px clamp(24px, 7vw, 120px);
+  padding: 96px clamp(24px, 7vw, 120px);
 }
 
 .section-heading {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
-  gap: 80px;
+  gap: 64px;
   align-items: end;
-  margin-bottom: 64px;
+  margin-bottom: 54px;
 }
 
 .section-heading.compact {
@@ -348,7 +348,7 @@ img {
   margin: 0;
   max-width: 860px;
   font-family: "Manrope", Arial, sans-serif;
-  font-size: 67px;
+  font-size: 60px;
   line-height: 1.04;
   letter-spacing: 0;
 }
@@ -364,25 +364,25 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(380px, .88fr);
   border-top: 1px solid var(--line);
-  min-height: 610px;
+  min-height: 580px;
 }
 
 .feature-project + .feature-project {
-  margin-top: 100px;
+  margin-top: 86px;
 }
 
 .feature-content {
-  padding: 42px 0 32px 54px;
+  padding: 36px 0 28px 48px;
   align-self: center;
 }
 
 .feature-map .feature-content {
   padding-left: 0;
-  padding-right: 54px;
+  padding-right: 48px;
 }
 
 .feature-media {
-  min-height: 580px;
+  min-height: 540px;
   position: relative;
   overflow: hidden;
   background: var(--ink-soft);
@@ -402,10 +402,12 @@ img {
 
 .agent-gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: minmax(0, 1.65fr) minmax(0, .85fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 6px;
-  min-height: 760px;
+  height: 560px;
+  min-height: 560px;
+  align-self: center;
   margin: 0;
   background: #15161b;
 }
@@ -419,7 +421,8 @@ img {
 }
 
 .agent-shot-main {
-  grid-column: 1 / -1;
+  grid-column: 1;
+  grid-row: 1 / -1;
 }
 
 .agent-shot img {
@@ -471,7 +474,7 @@ img {
   font-family: "Manrope", Arial, sans-serif;
   font-size: 13px;
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .project-meta {
@@ -500,15 +503,15 @@ img {
 
 .feature-project h3 {
   max-width: 620px;
-  margin: 0 0 20px;
-  font-size: 48px;
-  line-height: 1.08;
+  margin: 0 0 18px;
+  font-size: 42px;
+  line-height: 1.1;
 }
 
 .project-lead {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   color: var(--ink-soft);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -519,7 +522,7 @@ img {
 }
 
 .outcome-list {
-  margin: 24px 0;
+  margin: 20px 0;
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--line);
@@ -544,7 +547,7 @@ img {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin: 26px 0;
+  margin: 22px 0;
 }
 
 .tech-row span {
@@ -867,7 +870,7 @@ footer {
   }
 
   .feature-project h3 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .signal-strip {
@@ -889,7 +892,7 @@ footer {
   .feature-content,
   .feature-map .feature-content,
   .feature-paper .feature-content {
-    padding: 48px 0 24px;
+    padding: 40px 0 20px;
   }
 
   .about-section {
@@ -968,7 +971,7 @@ footer {
 
   .section,
   .contact-band {
-    padding: 76px 20px;
+    padding: 68px 20px;
   }
 
   .section-heading {
@@ -983,7 +986,7 @@ footer {
   }
 
   .feature-project + .feature-project {
-    margin-top: 78px;
+    margin-top: 68px;
   }
 
   .feature-media,
@@ -992,25 +995,35 @@ footer {
   }
 
   .agent-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 5px;
+    display: flex;
+    gap: 8px;
+    height: 300px;
     min-height: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
   }
 
+  .agent-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .agent-shot,
   .agent-shot-main {
-    grid-column: auto;
+    flex: 0 0 82%;
+    height: 294px;
+    scroll-snap-align: start;
   }
 
   .agent-shot img {
-    height: auto;
+    height: 100%;
   }
 
   .feature-content,
   .feature-map .feature-content,
   .feature-paper .feature-content {
-    padding: 34px 0 12px;
+    padding: 30px 0 10px;
   }
 
   .project-number {
@@ -1018,7 +1031,7 @@ footer {
   }
 
   .feature-project h3 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .project-lead {
