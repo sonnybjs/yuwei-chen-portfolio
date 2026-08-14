@@ -10,7 +10,7 @@ This catalogue separates public repositories, published research, collaborative 
 - **Status:** Working local-first system; public code
 - **Repository:** <https://github.com/sonnybjs/xixiao-eventbrite-admin-agent>
 - **Stack:** Python, FastAPI, Discord.py, Codex SDK, Eventbrite REST API, SQLite
-- **Summary:** Converts natural-language operations requests into structured plans and confirmed Eventbrite actions. Includes allowlists, dangerous-action guards, idempotent updates, mock/live client separation, local audit logs and 20 passing unit/integration tests.
+- **Summary:** Converts natural-language operations requests into structured plans and confirmed Eventbrite actions. The Discord workflow supports cross-event sales analysis, draft creation and ticket inventory changes, with allowlists, dangerous-action guards, idempotent updates, mock/live client separation and local audit logs.
 - **Boundary:** Does not claim external scale, autonomous financial operations or measured commercial impact.
 
 ### Sydney Offshore Pelagic AI Map

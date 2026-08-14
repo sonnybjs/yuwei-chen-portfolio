@@ -42,7 +42,7 @@ The `main` branch is published from the repository root. Updates pushed to `main
 - `index.html` - semantic page structure and project content.
 - `styles.css` - responsive visual design.
 - `script.js` - project filters and current-year footer.
-- `assets/` - generated hero artwork and screenshots from the two applied systems.
+- `assets/` - generated hero artwork, research visuals and product screenshots, including the live Discord workflow for the SydHah agent.
 - `PROJECTS.md` - full project catalogue with status, scope and visibility.
 - `.nojekyll` - serves the static files directly through GitHub Pages.
 - `robots.txt` and `sitemap.xml` - basic search-engine discovery files.
